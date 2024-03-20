@@ -1,18 +1,31 @@
 # Word-Cloud-and-Tic-Tac-Toe
 
-# Word Cloud Generator using D3.js
+# Word Cloud Generator
 
-This application generates a word cloud based on the synonyms of a word provided by the user. It utilizes D3.js to visualize the word cloud.
+This project generates word clouds based on synonyms of the entered word using the API-Ninjas Thesaurus API and visualizes them using D3.js.
 
-## How it works
+## Overview
 
-1. **Input Word:** The user is prompted to enter a word.
-2. **API Query:** The application queries the [Thesaurus API](https://api.api-ninjas.com/v1/thesaurus) to fetch all the synonyms of the provided word.
-3. **Word Cloud Generation:** Using D3.js, the application generates a word cloud where the size of each word corresponds to its frequency of occurrence in the retrieved synonyms.
+Word clouds are a popular visualization technique for representing the frequency of words in a given text. This project allows users to enter a word, fetch its synonyms using the API-Ninjas Thesaurus API, filter out inappropriate words, and display the remaining synonyms as a word cloud.
 
-## API Endpoint
-- **Thesaurus API:** [https://api.api-ninjas.com/v1/thesaurus](https://api.api-ninjas.com/v1/thesaurus)
-- 
+## Features
+
+- **API Used:** [API-Ninjas Thesaurus API](https://api.api-ninjas.com/v1/thesaurus): This API is used to fetch synonyms for the entered word.
+- **Handling Inappropriate Words:** Inappropriate words are filtered out from the synonyms list before displaying the word cloud. The list of inappropriate words can be easily customized by adding more words to the `blocklist` array in the JavaScript code.
+
+## Usage
+
+1. Enter a word in the input field.
+2. Click on the "Generate Word Cloud" button to fetch synonyms and display the word cloud.
+3. The word cloud will be displayed in the designated container.
+
+## Technologies Used
+
+- **D3.js:** A JavaScript library for producing dynamic, interactive data visualizations in web browsers.
+- **jQuery:** A fast, small, and feature-rich JavaScript library.
+- **API-Ninjas Thesaurus API:** An API used to fetch synonyms for words.
+- **HTML/CSS:** Used for the structure and styling of the web page.
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Tic-Tac-Toe Game
