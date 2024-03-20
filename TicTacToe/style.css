@@ -1,0 +1,49 @@
+body {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  background: #22303C;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px 0 0;
+  color: white;
+}
+.tic-tac-toe-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin: 20px auto;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.cell[data-value = 'X'] {
+  color: orange;
+}
+.cell[data-value = 'O'] {
+  color: lightgreen;
+}
+.outcome {
+  font-size: 24px;
+  color: white;
+}
+button {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 50px;
+  padding: 10px 20px;
+}
