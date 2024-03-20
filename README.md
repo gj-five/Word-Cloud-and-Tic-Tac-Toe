@@ -1,24 +1,10 @@
 # Word-Cloud-and-Tic-Tac-Toe
 
-# Word Cloud Generator
+Word Cloud Generator
+This project is a Word Cloud Generator that utilizes the API-Ninjas Thesaurus API to generate word clouds based on synonyms of the entered word. It employs D3.js for visualizing the word cloud.
 
-This project generates word clouds based on synonyms of the entered word using the API-Ninjas Thesaurus API and visualizes them using D3.js.
-
-## Overview
-
-Word clouds are a popular visualization technique for representing the frequency of words in a given text. This project allows users to enter a word, fetch its synonyms using the API-Ninjas Thesaurus API, filter out inappropriate words, and display the remaining synonyms as a word cloud.
-
-## Features
-
-- **API Used:** [API-Ninjas Thesaurus API](https://api.api-ninjas.com/v1/thesaurus): This API is used to fetch synonyms for the entered word.
-- **Handling Inappropriate Words:** Inappropriate words are filtered out from the synonyms list before displaying the word cloud. The list of inappropriate words can be easily customized by adding more words to the `blocklist` array in the JavaScript code.
-
-## Usage
-
-1. Enter a word in the input field.
-2. Click on the "Generate Word Cloud" button to fetch synonyms and display the word cloud.
-3. The word cloud will be displayed in the designated container.
-
+API Used
+API-Ninjas Thesaurus API: This API is utilized to fetch synonyms for the entered word.
 ## Technologies Used
 
 - **D3.js:** A JavaScript library for producing dynamic, interactive data visualizations in web browsers.
