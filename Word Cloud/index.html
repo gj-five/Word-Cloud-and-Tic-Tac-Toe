@@ -55,7 +55,8 @@ Any synonyms retrieved from the API that match the words in the blacklist are fi
       fetchSynonyms(word);
     }
     function fetchSynonyms(word) {
-      var apiKey = 'UgPEPj2cyOMdmNSz2te59Q==up7FFx8GuSXBiZ5H';
+      // Replace 'API key is missing' with your actual API key or retrieve it from an environment variable
+      var apiKey = 'API key is missing';
       $.ajax({
         method: 'GET',
         url: 'https://api.api-ninjas.com/v1/thesaurus?word=' + word,
